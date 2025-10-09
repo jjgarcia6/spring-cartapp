@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.backend.cartapp.backend_cartapp.services.ProductService;
 import com.backend.cartapp.backend_cartapp.models.entities.Product;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
+@CrossOrigin(origins = "http://127.0.0.1:5173")
 public class ProductController {
 
     @Autowired
